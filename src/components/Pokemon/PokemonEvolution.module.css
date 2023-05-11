@@ -1,0 +1,34 @@
+.evolution {
+    margin-bottom: 1rem;
+}
+
+.evolution__row {
+    display: flex;
+    flex-direction: row;
+}
+
+.evolution__item {
+    display: flex;
+    flex-direction: row;
+    width: 7rem;
+    margin: 0 0.1rem;
+}
+
+.evolution__name {
+    cursor: pointer;
+    text-align: center;
+    width: 6.0rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-left: .3rem;
+}
+.evolution__separator {
+}
+
+.evolution__name:hover {
+    text-decoration: underline;
+}
+
+.evolution__current_item {
+    font-weight: bold;
+}
