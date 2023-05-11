@@ -1,0 +1,7 @@
+.history_item {
+    cursor: pointer;
+}
+
+.history_item:hover {
+    text-decoration: underline;
+}

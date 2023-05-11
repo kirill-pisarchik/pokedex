@@ -1,0 +1,31 @@
+.App {
+  min-height: calc(100vh);
+  display: grid;
+  grid-template-areas: "header" "main" "aside";
+  grid-template-rows: 5rem auto auto;
+  grid-template-columns: auto;
+  align-content: flex-start;
+  color: #313131;
+}
+
+header {
+  grid-area: header;
+  height: 5rem;
+}
+
+.main {
+  grid-area: main;
+  position: relative;
+}
+
+aside {
+  grid-area: aside;
+  position: relative;
+}
+
+@media (min-width: 768px) {
+  .App {
+    grid-template-areas: "header header header" "main main aside" "main main aside";
+    grid-template-columns: auto auto 20rem;
+  }
+}
