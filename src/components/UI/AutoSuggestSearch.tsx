@@ -34,11 +34,10 @@ const AutoSuggestSearch: FC<AutoSuggestSearchProps> = ({ label, allSuggestions, 
     const starts = [];
     const match = [];
     let i = 0;
-    while ((starts.length < 10 || match.length < 10) && i < allSuggestions.length) {
+    while (starts.length < 10 && i < allSuggestions.length) {
       if (allSuggestions[i].name.startsWith(cleanValue)) {
         starts.push(allSuggestions[i]);
-      }
-      if (allSuggestions[i].name.match(cleanValue)) {
+      } else if (match.length < 10 && allSuggestions[i].name.match(cleanValue)) {
         match.push(allSuggestions[i]);
       }
       i++;
