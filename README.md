@@ -10,7 +10,7 @@ Test project created using React and accessing the [pokeapi](https://pokeapi.co/
 
 ## Implementation notes, key points, issues
  * As long as application is "read only" I do not see any extra changes to be done
- * The full list of Pokemon names is loaded twice on page load and I did not figure out how to address that
+ * The full list of Pokemon names is loaded twice on page load and I did not figure out how to address that (apparently this happens due to React.StrictMode)
  * Some basic tests were added
  * Styling is pretty basic as I tried to focus on usability, stability and performance
  * I did not use Context or Redux but if the app will need to have more features Context would be the next thing to add
